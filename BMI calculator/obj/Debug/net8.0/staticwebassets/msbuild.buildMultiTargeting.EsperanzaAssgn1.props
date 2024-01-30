@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EsperanzaAssgn1.props" />
+</Project>

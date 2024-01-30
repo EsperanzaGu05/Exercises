@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EsperanzaAssgn1/1.0.0": {
+        "runtime": {
+          "EsperanzaAssgn1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EsperanzaAssgn1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

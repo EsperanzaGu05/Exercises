@@ -1,0 +1,45 @@
+﻿@model EsperanzaBMIAssgn1
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/popper.js/umd/popper.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+    <h1 class="m-4">BMI Calculator - Esperanza</h1>
+    <form asp-action="Index" method="post" class="m-4">
+        <div class="row mb-3">
+            <label asp-for="Weight844" class="col-form-label col-sm-2">Enter your Weight (in pounds)</label>
+            <div class="col-md-10">
+                <input asp-for="Weight844" type="number"/>
+            </div>
+            
+        </div>
+        <div class="row mb-3">
+            <label asp-for="Height844" class="col-form-label col-sm-2">Enter your Height (in inches)</label>
+            <div class="col-md-10">
+            <input asp-for="Height844"  type="number" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-form-label col-sm-2">Your Body Mass Index (BMI) is:</label>
+            <div class="col-md-10">
+            <input  value="@ViewBag.bodyMassIndex844.ToString("F")" readonly />
+            </div>
+        </div>
+        <div>
+            <button type="submit" > Calculate BMI </button>
+            <a asp-action="Index" > Clear </a>
+        </div>
+        
+    </form>
+</body>
+</html>
